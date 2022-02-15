@@ -1,34 +1,71 @@
 body {
     background: #000;
+    color: white;
 }
 nav {
+    background-color: rgba(0,0,0,.6);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20pt;
     font-weight: bold;
     text-align: right;
+    /*overflow: hidden;*/
+    position: fixed;
+    top: 0;
+    height: 35px;
+    float: left;
+    width: 100%;
+    /*color: #0b6;
+    text-decoration: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: right;*/
 }
-nav a {
+.navBar {
     color: #0b6;
     text-decoration: none;
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
+    text-align: right;
 }
 nav a:hover {
     background-color: #0b6;
     color: black;
 }
-h1 {
+#citeTitle{
+    color: whitesmoke;
+    background-color: rgba(0,0,0,.6);
+}
+.citeTitle:hover{
+    background-color: black;
+    color: white;
+}
+.mainh1 {
     text-align: center;
-    font-size: 150px;
     font-family: verdana;
-    line-height: 0px;
+    font-size: 5em;
     color: #0b6;
     padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 h2 {
     text-align: center;
     color: #0b6;
     font-size: 30px;
+}
+p {
+    font-size: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 150px;
+}
+#about + p, #projects + p {
+    width: 40%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
